@@ -29,7 +29,7 @@ main {
 	font-family: 'Lemonada', cursive;
 	font-size: 24px;
 	font-weight: bold;
-	color: #FFF;
+	color: #ED008C;
 }
 
 /* CARDS */
@@ -151,9 +151,9 @@ main {
 	max-width: 400px;
 	height: auto;
 	padding: 10px 5px;
-	border: 2px solid #FFF;
+	border: 2px solid #ED008C;
 	border-radius: 5px;
-	background: transparent;
+	background: #ED008C;
 	font-family: 'Open Sans', sans-serif;
 	color: #FFF;
 	font-size: 18px;
@@ -166,8 +166,7 @@ main {
 
 .winner button:hover,
 .winner button:active {
-	background: #FFF;
-	color: #333;
+	background: #CD0E7F;
 	cursor: pointer;
 }	
 

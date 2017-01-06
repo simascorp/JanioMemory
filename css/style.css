@@ -1,0 +1,176 @@
+body {
+	background: #333;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+main {
+	width: 95%;
+	max-width: 768px;
+	min-width: 265px;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* GAME TITLE */
+
+.game-title {
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.game-title h1 {
+	font-family: 'Lemonada', cursive;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+/* CARDS */
+
+.section-cards {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: 10px;
+	-webkit-perspective: 500;
+}
+
+.section-cards .card {
+	float: left;
+	position: relative;
+	margin-right: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 2px solid #FFF;
+	background: #FFF;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 1s;
+	will-change: transform;
+}
+
+.section-cards .card.flip {
+	-webkit-transform: rotateY(-180deg);
+}
+
+.section-cards .card .back {
+	-webkit-transform: rotateY(180deg);
+}
+
+.section-cards .card figure {
+	background: #FFF;
+	border-radius: 5px;
+	position: absolute;
+	margin:0;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+}
+
+.section-cards .card figure img {
+	width:60px;
+}
+
+@media (max-width:480px) {
+	.section-cards .card {
+		width: 65px;
+		height: 65px;
+	}	
+	.section-cards .card figure img {
+		width: 65px;
+	}
+}
+@media (min-width:481px) {
+	.section-cards .card {
+		width: 80px;
+		height: 80px;
+	}	
+	.section-cards .card figure img {
+		width: 80px;
+	}
+}	
+@media (min-width:641px) {
+	.section-cards .card {
+		width: 100px;
+		height: 100px;
+	}	
+	.section-cards .card figure img {
+		width: 100px;
+	}
+}
+@media (min-width:961px) {
+	.section-cards .card {
+		width: 100px;
+		height: 100px;
+	}	
+	.section-cards .card figure img {
+		width: 100px;
+	}
+}
+
+/* WINNER CARD */
+
+.winner {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	display: none;
+}
+
+.winner img {
+	max-width: 400px;
+	width: 90%;
+	height: auto;
+	border: 2px solid #FFF;
+	border-radius: 5px;
+}
+
+.winner p {
+	width: 100%;
+	height: auto;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 24px;
+	color: #FFF;
+	margin-top: 10px;
+}
+
+.winner button {
+	width: 90%;
+	max-width: 400px;
+	height: auto;
+	padding: 10px 5px;
+	border: 2px solid #FFF;
+	border-radius: 5px;
+	background: transparent;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 20px;
+	outline: none;
+	transition: all 0.3s ease-in;
+}	
+
+.winner button:hover,
+.winner button:active {
+	background: #FFF;
+	color: #333;
+	cursor: pointer;
+}	
+
+.winner button i {
+	margin-left: 10px;
+}
